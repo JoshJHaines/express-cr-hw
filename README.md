@@ -2,8 +2,8 @@ ONLY .gitignore node_modules\*\*\*
 
 Create an express simple CR app
 
-1. Make a new directory called express-cr-hw
-2. Go inside express-intro-hw folder
+[ ]1. Make a new directory called express-cr-hw
+[]2. Go inside express-intro-hw folder
 3. In terminal, Make an app.js file using touch
 4. In terminal, npm init -y
 5. Open folder
