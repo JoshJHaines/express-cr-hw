@@ -9,7 +9,7 @@ Create an express simple CR app
 - [x] 5. Open folder
 - [x] 6. Add express, Morgan, and ejs through npm i and call them inside app.js file
 - [x] 7. Create a server using Express, and use logger (Morgan) in App.js (don’t forger to use .json())
-- [ ] 8. Create a router folder and create an index router and a todo router files then connect in App.js (index = /, todo = /api/todo).
+- [x] 8. Create a router folder and create an index router and a todo router files then connect in App.js (index = /, todo = /api/todo).
 - [ ] 9. In index router:
    a. Make router and export out (modules.export)
    b. Make a GET "/" route that returns a json of a message that says 'Welcome to my App'
