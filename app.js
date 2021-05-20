@@ -15,7 +15,13 @@ app.use(logger("dev"));
 //use express json
 app.use(express.json());
 
+app.set("view engine", "ejs");
 
+
+
+// app.get("/", function (req, res){
+//     console.log("it worked")
+// })
 
 
 //Step 1c start express server
