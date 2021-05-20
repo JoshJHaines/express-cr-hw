@@ -2,15 +2,15 @@ ONLY .gitignore node_modules\*\*\*
 
 Create an express simple CR app
 
-[ ]1. Make a new directory called express-cr-hw
-[]2. Go inside express-intro-hw folder
-3. In terminal, Make an app.js file using touch
-4. In terminal, npm init -y
-5. Open folder
-6. Add express, Morgan, and ejs through npm i and call them inside app.js file
-7. Create a server using Express, and use logger (Morgan) in App.js (don’t forger to use .json())
-8. Create a router folder and create an index router and a todo router files then connect in App.js (index = /, todo = /api/todo).
-9. In index router:
+- [ ] 1. Make a new directory called express-cr-hw
+- [ ] 2. Go inside express-intro-hw folder
+- [ ] 3. In terminal, Make an app.js file using touch
+- [ ] 4. In terminal, npm init -y
+- [ ] 5. Open folder
+- [ ] 6. Add express, Morgan, and ejs through npm i and call them inside app.js file
+- [ ] 7. Create a server using Express, and use logger (Morgan) in App.js (don’t forger to use .json())
+- [ ] 8. Create a router folder and create an index router and a todo router files then connect in App.js (index = /, todo = /api/todo).
+- [ ] 9. In index router:
    a. Make router and export out (modules.export)
    b. Make a GET "/" route that returns a json of a message that says 'Welcome to my App'
 10. In todo router:
