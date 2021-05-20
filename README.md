@@ -11,8 +11,8 @@ Create an express simple CR app
 - [x] 7. Create a server using Express, and use logger (Morgan) in App.js (don’t forger to use .json())
 - [x] 8. Create a router folder and create an index router and a todo router files then connect in App.js (index = /, todo = /api/todo).
 - [ ] 9. In index router:
-   a. Make router and export out (modules.export)
-   b. Make a GET "/" route that returns a json of a message that says 'Welcome to my App'
+     a. Make router and export out (modules.export)
+     b. Make a GET "/" route that returns a json of a message that says 'Welcome to my App'
 - [ ] 10. In todo router:
     a. Make router, export out and add uuidv4 (install and require)
     b. Add this dummy data to your todo router (do not change anything in this array and don't add anything!, make sure this array in your!):
