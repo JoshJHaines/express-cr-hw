@@ -1,30 +1,32 @@
-//Step 1a initialize express by bringing in require express
-const express = require("express");
-//step 2a bringing in morgan
-const logger = require("morgan");
-//Step 1b initialize express app
-const app = express();
+const express = require('express');
+const logger = require('morgan');
+const path = require('path')
+const todoRouter = require('./router/todoRouter')
+const indexRouter = require('./router/indexRouter')
+const uuidv4 = require('uuid').v4
 
-const indexRouter = require("./routes/indexRouter")
-const todoRouter = require("./routes/todoRouter")
+const app = express()
 
+app.use (logger('dev'));
 
+app.use(express.json())
 
-//step 2b use logger
-app.use(logger("dev"));
-//use express json
-app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 
-app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, "views"))
 
-
-
-// app.get("/", function (req, res){
-//     console.log("it worked")
-// })
+app.set('view engine', 'ejs')
 
 
-//Step 1c start express server
-app.listen(3000, function () {
-  console.log("Server started in port 3000");
-});
+app.use("/api/todo", todoRouter)
+app.use("/", indexRouter)
+
+app.get('/', function (req,res){
+    res.render('index')
+})
+
+app.listen(3000, function(){
+    console.log('server started')
+})
+
+module.exports = app
